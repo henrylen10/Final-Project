@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PitStop</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stop.css">
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</head>
+<body>
+<header>
+<h4>Account and Cart</h4>
+  <h1>PitStop</h1>
+</header>
+<nav>
+    <a href="index.html">Home</a> &nbsp;
+    <a href="">Products</a> &nbsp;
+    <a href="">About</a> &nbsp;
+    <a href="">Contact</a>
+</nav>
+<main>
+ <h2><strong>What is PitStop?</strong></h2>
+ <p>PitStop is a delivery service that delivers anything from fast food to car parts. PitStop is dedicated to you and your needs, that's why nothing is too big or too small for PitStop to deliver.</p>
+ <h2><strong>Why Should I use PitStop?</strong></h2>
+<p>PitStop has been created by people who care and want you to stay safe during these difficult times. We understand that you may be too busy or at risk to go out and shop<span id="dots">...</span><span id="more">, and that's why we designed & created this service for people just like you.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+<h2>Who are we?</h2>
+<p>We are 4 entrepreneurs who wanted to help those who may be too busy or at risk to go out and shop.</p>
+</main>
+<footer>
+<section>
+<h3>___________</h3>
+<p>Privacy & Security<br>Terms of Use<br>Careers</p>
+</section>
+<section>
+<h3><strong>Services</strong></h3>
+<p>Returns<br>Languages<br>Blog</p>
+</section>
+<section>
+<h3>___________</h3>
+<p>Become a PitStopper<br>Order History<br>Help</p>
+</section>
+</footer>
+</body>
+</html>
+
+
+
+
+
